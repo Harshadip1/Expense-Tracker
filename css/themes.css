@@ -1,0 +1,95 @@
+/* Dark theme (default) */
+[data-theme="dark"] {
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --bg-tertiary: #334155;
+  --bg-glass: rgba(30, 41, 59, 0.7);
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #E2E8F0;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --border: rgba(15, 23, 42, 0.1);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .sidebar { background: rgba(255, 255, 255, 0.95); }
+[data-theme="light"] .particle { background: var(--primary); opacity: 0.15; }
+
+/* Neon finance theme */
+[data-theme="neon"] {
+  --bg-primary: #050510;
+  --bg-secondary: #0a0a1a;
+  --bg-tertiary: #12122a;
+  --bg-glass: rgba(10, 10, 26, 0.85);
+  --primary: #00ff88;
+  --primary-light: #66ffaa;
+  --accent: #ff00ff;
+  --success: #00ff88;
+  --danger: #ff3366;
+  --warning: #ffcc00;
+  --text-primary: #e0ffe8;
+  --text-secondary: #88aa99;
+  --gradient-primary: linear-gradient(135deg, #00ff88 0%, #00ccff 50%, #ff00ff 100%);
+  --gradient-card: linear-gradient(145deg, rgba(0, 255, 136, 0.1) 0%, rgba(255, 0, 255, 0.08) 100%);
+  --border: rgba(0, 255, 136, 0.2);
+}
+
+[data-theme="neon"] .stat-card:hover,
+[data-theme="neon"] .card:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+}
+
+[data-theme="neon"] .nav-link.active {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+}
+
+/* Minimal professional theme */
+[data-theme="minimal"] {
+  --bg-primary: #FAFAFA;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #F0F0F0;
+  --bg-glass: rgba(255, 255, 255, 0.95);
+  --primary: #18181B;
+  --primary-light: #3F3F46;
+  --accent: #52525B;
+  --success: #16A34A;
+  --danger: #DC2626;
+  --warning: #CA8A04;
+  --text-primary: #18181B;
+  --text-secondary: #71717A;
+  --gradient-primary: linear-gradient(135deg, #18181B 0%, #3F3F46 100%);
+  --gradient-card: linear-gradient(145deg, rgba(24, 24, 27, 0.03) 0%, rgba(63, 63, 70, 0.05) 100%);
+  --border: rgba(24, 24, 27, 0.08);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+}
+
+[data-theme="minimal"] .sidebar-logo h1 {
+  -webkit-text-fill-color: var(--text-primary);
+  background: none;
+}
+
+[data-theme="minimal"] .nav-link.active {
+  background: var(--primary);
+  box-shadow: none;
+}
+
+[data-theme="minimal"] .btn-primary {
+  background: var(--primary);
+  box-shadow: none;
+}
+
+/* Theme transition */
+body, .sidebar, .card, .stat-card, .transaction-item, .form-control {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
